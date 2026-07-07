@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_prdlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ArshitGR"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.LoginPage" />
+        <activity android:name=".Activities.RegisterUser" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.PageTerm" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.PageRefund" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.PagePrivacy" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.PageFAQ" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageProfile" />
+        <activity android:name="codesgesture.app.arshitgr.Fragment.AccountFragment" />
+        <activity android:name="codesgesture.app.arshitgr.Fragment.ShopFragment" />
+        <activity android:name="codesgesture.app.arshitgr.Fragment.WishListFragment" />
+        <activity android:name="codesgesture.app.arshitgr.Fragment.CartFragment" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.PageContact" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.PageAbout" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.PageDeveloper" />
+
+        <!-- Grocery Pages  -->
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.Dashboard" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageProduct" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageProductDetails" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageSearchProduct" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageOffer" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.MenuFragment" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.AddAddress" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.Page_CheckOut" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.OrderProductDetails" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.OrderDetails" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.CancelOrderForm" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.CancelMessage" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.AddressBook" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageAddress" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageCancleOrder" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageOrder" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.UpdateAddress" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageSuccefull" />
+
+        <!-- Restaurant Pages  -->
+        <activity android:name="codesgesture.app.arshitgr.Activities.Restaurant.RDashBoard" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Restaurant.RProfile" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Restaurant.PageRestaurant" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Restaurant.PageRMenu" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Restaurant.PageRProduct" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Restaurant.RCart" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Restaurant.RSearchProduct" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageZoomImage" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageSaleView" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageMostView" />
+        <activity android:name="codesgesture.app.arshitgr.Activities.Grocery.PageRecentView" />
+
+
+    </application>
+
+</manifest>
