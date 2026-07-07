@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/app_org"-->
+<!--        android:fontFamily="@font/custom_font"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:text="Easy Life"-->
+<!--        android:textSize="20dp"-->
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/logoimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/easylogo" />
+
+
+
+</LinearLayout>

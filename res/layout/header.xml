@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchbar"
+            android:layout_weight="1"
+            android:fontFamily="@font/custom_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:focusable="false"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:hint="Search for products.. "
+            android:textColorHint="@color/grey"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            android:layout_marginTop="5dp"
+            android:popupBackground="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:drawableTint="@color/grey"
+            android:drawableStart="@drawable/baseline_search_24"
+            android:background="@drawable/box"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/person"
+            android:padding="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/cart"
+            android:padding="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/baseline_favorite_24" />
+
+</LinearLayout>

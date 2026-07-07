@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|bottom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/cartamt"
+        android:background="@color/trblue"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txamt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_font"
+            android:text="Rs. 151.00   (2 Items)"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/btcart"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_org"
+            android:fontFamily="@font/custom_font"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="View Cart"
+            android:textAlignment="center"
+            android:textColor="@color/red" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

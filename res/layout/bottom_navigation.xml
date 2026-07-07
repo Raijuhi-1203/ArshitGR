@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout"
+    android:background="@color/greylgt"
+    android:layout_alignParentBottom="true"
+    android:gravity="center|bottom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/cartamt"
+        android:background="@color/trblue"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txamt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/custom_font"
+            android:text="Rs. 151.00   (2 Items)"
+            android:textAlignment="textStart"
+            android:textColor="@color/blue"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/btcart"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_org"
+            android:fontFamily="@font/custom_font"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="View Cart"
+            android:textAlignment="center"
+            android:textColor="@color/red" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="5"
+        android:background="@color/greylgt2"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/navhome" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#000"
+            android:fontFamily="@font/custom_font"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wishlist"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/navlike" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="@font/custom_font"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wishlist"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shop"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/navcat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:fontFamily="@font/custom_font"
+            android:textStyle="bold"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/navuser" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:fontFamily="@font/custom_font"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cartbtn"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/navcart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:fontFamily="@font/custom_font"
+            android:textStyle="bold"
+            android:text="Cart"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
