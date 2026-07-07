@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Activities.PageAbout"
+        android:orientation="vertical">
+
+        <include layout="@layout/header"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#92E3E0E0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txname"
+                                android:fontFamily="@font/custom_font"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:id="@+id/txmob"
+                                android:fontFamily="@font/custom_font"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/custom_font"
+                                android:textAlignment="textStart"
+                                android:textSize="16dp"
+                                android:text="Your Information"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:layout_width="match_parent"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/bag"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btnohistory"
+                                    android:text="Order History"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <Button
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:textSize="11dp"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/userp"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btnpinfo"
+                                    android:text="Profile Info"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:layout_width="match_parent"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:fontFamily="@font/custom_font"
+                                    android:textSize="11dp"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/location"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btaddress"
+                                    android:text="Address Book"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <Button
+                                    android:fontFamily="@font/custom_font"
+                                    android:textSize="11dp"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/cancelled"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btncorder"
+                                    android:text="Cancelled Order"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:layout_width="match_parent"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:fontFamily="@font/custom_font"
+                                    android:textSize="11dp"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/wishlist"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btnwish"
+                                    android:text="Your WishList"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <Button
+                                    android:fontFamily="@font/custom_font"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/support"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btnsupport"
+                                    android:textSize="11dp"
+                                    android:text="Customer Support"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:layout_width="match_parent"
+                                android:padding="5dp"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:fontFamily="@font/custom_font"
+                                    android:textSize="11dp"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/aboutp"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btnabout"
+                                    android:text="About Us"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                                <Button
+                                    android:fontFamily="@font/custom_font"
+                                    android:textSize="11dp"
+                                    android:layout_margin="3dp"
+                                    android:drawablePadding="8dp"
+                                    android:padding="8dp"
+                                    android:layout_weight="1"
+                                    android:drawableStart="@drawable/lop"
+                                    android:background="@drawable/btn_white"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/btnlogout"
+                                    android:text="LogOut"
+                                    android:textAlignment="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

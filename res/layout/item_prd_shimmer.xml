@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/click_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:layout_weight="1"
+    android:background="@drawable/product_box"
+    android:orientation="vertical">
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="0dp"-->
+    <!--        app:cardBackgroundColor="@color/white"-->
+    <!--        app:cardCornerRadius="0dp"-->
+    <!--        app:cardElevation="0dp"-->
+    <!--        app:cardMaxElevation="0dp"-->
+    <!--        app:cardPreventCornerOverlap="true">-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/prdimg"
+                android:adjustViewBounds="true"
+                android:padding="2dp"
+                android:src="@drawable/prddefault"
+                android:scaleType="centerInside"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/prdnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:maxLength="26"
+                android:background="@color/shimmer"
+                android:fontFamily="@font/custom_font"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/custom_font"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/offmrp"
+                    android:background="@color/shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/green"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/shimmer"
+                    android:fontFamily="@font/custom_font"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/mrp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/custom_font"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/unit"
+                    android:background="@color/shimmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btncart"
+                android:padding="8dp"
+                android:textSize="14dp"
+                android:background="@color/shimmer"
+                android:fontFamily="@font/custom_font"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/cart_qty"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btngrey"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/baseline_remove_circle_24" />
+
+
+                <TextView
+                    android:fontFamily="@font/custom_font"
+                    android:id="@+id/cartno"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/baseline_add_circle_24" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/offimg"
+            android:background="@color/shimmer"
+            android:layout_gravity="left|end"
+            />
+
+        <TextView
+            android:id="@+id/dismrp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|end"
+            android:textColor="@color/shimmer"
+            android:textSize="8dp"
+            android:text="₹ 7\noff" />
+
+        <ImageView
+            android:id="@+id/nclick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="right|end"
+            android:src="@drawable/non_clickable" />
+
+        <ImageView
+            android:id="@+id/click"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|end"
+            android:layout_margin="5dp"
+            android:src="@drawable/clickable"
+            android:visibility="gone" />
+
+    </FrameLayout>
+    <!--    </androidx.cardview.widget.CardView>-->
+</LinearLayout>

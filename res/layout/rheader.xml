@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="3dp"
+    android:padding="3dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="@drawable/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spnrarea"/>
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/searchbar"
+        android:fontFamily="@font/custom_font"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:focusable="false"
+        android:clickable="true"
+        android:textSize="14dp"
+        android:drawablePadding="5dp"
+        android:hint="Search for products.. "
+        android:textColorHint="@color/grey"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:layout_marginTop="5dp"
+        android:popupBackground="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:drawableTint="@color/blue"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:background="@drawable/box"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:id="@+id/acc"-->
+<!--                android:tint="@color/grey"-->
+<!--                android:background="@drawable/round_tr"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:src="@drawable/baseline_person_24" />-->
+
+</LinearLayout>
